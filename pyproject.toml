@@ -1,0 +1,13 @@
+[project]
+name = "northstar-solana-report"
+version = "1.0.0"
+description = "Northstar: an original, automatically updating Solana ecosystem report."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[project.scripts]
+northstar = "northstar.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["northstar*"]

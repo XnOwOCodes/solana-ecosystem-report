@@ -1,0 +1,47 @@
+{
+  "refresh_seconds": 300,
+  "request_timeout_seconds": 30,
+  "rpc_timeout_seconds": 45,
+  "max_retries": 3,
+  "retry_backoff_seconds": 1.6,
+  "rpc_gap_seconds": 0.35,
+  "history_keep": 288,
+  "top_validators": 25,
+  "performance_samples": 60,
+  "output_dir": "output",
+  "history_path": "data/history.jsonl",
+  "snapshot_path": "data/last_snapshot.json",
+  "user_agent": "NorthstarSolanaReport/1.0 (+https://github.com/YOUR_GITHUB/solana-ecosystem-report)",
+  "rpc_endpoints": [
+    "https://api.mainnet-beta.solana.com",
+    "https://api.mainnet.solana.com",
+    "https://solana-rpc.publicnode.com",
+    "https://solana.drpc.org"
+  ],
+  "sources": {
+    "coingecko_simple": "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true",
+    "llama_price": "https://coins.llama.fi/prices/current/coingecko:solana",
+    "llama_pct": "https://coins.llama.fi/percentage/coingecko:solana?period=24h",
+    "llama_chains": "https://api.llama.fi/v2/chains",
+    "llama_tvl_hist": "https://api.llama.fi/v2/historicalChainTvl/Solana",
+    "llama_dex": "https://api.llama.fi/overview/dexs/Solana?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
+    "llama_fees": "https://api.llama.fi/overview/fees/Solana?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true",
+    "llama_revenue": "https://api.llama.fi/overview/fees/Solana?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyRevenue",
+    "llama_stables": "https://stablecoins.llama.fi/stablecoinchains",
+    "llama_protocols": "https://api.llama.fi/protocols",
+    "stakewiz_validators": "https://api.stakewiz.com/validators",
+    "solana_data_page": "https://solana.com/data"
+  },
+  "anomalies": {
+    "tps_drop_pct": 40,
+    "tps_spike_pct": 80,
+    "slot_time_slow_ms": 650,
+    "slot_time_fast_ms": 180,
+    "delinquent_stake_pct": 5,
+    "delinquent_count": 80,
+    "price_move_pct": 8,
+    "tvl_move_pct": 12,
+    "dex_move_pct": 60,
+    "zscore": 2.6
+  }
+}
