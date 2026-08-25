@@ -3,20 +3,20 @@
 Public repo placeholder (replace after you push):
 
 ```
-https://github.com/YOUR_GITHUB/solana-ecosystem-report
+https://github.com/XnOwOCodes/solana-ecosystem-report
 ```
 
 Live dashboard placeholder (GitHub Pages, Cloudflare Pages, or a VPS running `python3 -m northstar serve --watch`):
 
 ```
-https://YOUR_GITHUB.github.io/solana-ecosystem-report/dashboard.html
+https://xnowocodes.github.io/solana-ecosystem-report/
 ```
 
 ## What to paste into Superteam
 
 **Title:** Northstar — a keyless, auto-updating Solana ecosystem report (dashboard + Markdown + JSON)
 
-**Repo:** `https://github.com/YOUR_GITHUB/solana-ecosystem-report`
+**Repo:** `https://github.com/XnOwOCodes/solana-ecosystem-report`
 
 **Demo:** attach `samples/dashboard.html` / hosted URL, plus `samples/report.md`
 
