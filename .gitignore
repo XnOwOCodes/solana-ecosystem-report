@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+data/history.jsonl
+data/last_snapshot.json
+output/
+.DS_Store
+.env
+*.log
